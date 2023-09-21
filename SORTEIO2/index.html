@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sortear Nomes
+    </title>
+</head>
+<body>
+    <main class="app">
+        <section class="sorteio">
+            <div class="container">
+                <h2>SORTEAR NOMES</h2>
+                <div class="linha"></div>
+                <div class="formulario container">
+                    <label for="entradaNomes">Adicione os nomes para o sorteio</label>
+                    <textarea name="entradaNomes" placeholder="Adicione os nomes separados por virgula. ex:(Bahbi,Julia)"></textarea>  </textarea>
+                    <button class="Sortear">Sortear</button>
+                </div>
+                <div class="resultado">
+                    <p>Resultado:</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            body {
+            background: linear-gradient(rgba(255, 255, 255, 0.918), rgba(252, 0, 0, 0.912));
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        }
+    </style>
+     <div class="container">
+        <h3>SORTEIO NÚMEROS</h3>
+
+        <div class="entradas">
+            <div class="entrada">
+                <label for="min">minimo</label>
+                <input type="number" id="min" name="min">
+            </div>
+            <div class="entrada">
+                <label for="max">maximo</label>
+                <input type="number" id="max" name="max">
+            </div>
+        </div>
+        <button id="sortear">Sortear</button>
+
+        <div id="resultado">
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
